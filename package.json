@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@testing-library/jest-native": "^5.3.3",
     "@testing-library/react-native": "^11.5.0",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
@@ -28,7 +29,9 @@
   },
   "jest": {
     "preset": "jest-expo",
-    "setupFilesAfterEnv": ["./jest-setup-after-env.js"]
+    "setupFilesAfterEnv": [
+      "./jest-setup-after-env.js"
+    ]
   },
   "eslintConfig": {
     "extends": "universe/native"
