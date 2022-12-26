@@ -4,8 +4,8 @@ import React from 'react';
 import Hello from './Hello';
 
 describe('Hello', () => {
-  it('renders the correct message', () => {
-    render(<Hello />);
-    expect(screen.getByText('Hello, world!')).toBeVisible();
+  it('display the passed in name', () => {
+    render(<Hello name="Shantanu" />);
+    expect(screen.getByText('Hello, Shantanu!')).toBeVisible();
   });
 });
